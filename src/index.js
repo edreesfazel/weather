@@ -14,7 +14,7 @@ async function getWeather() {
 
     
     try {
-        const response = await fetch(endpoint);
+        const response = await fetch(endpoint, {mode: 'cors'});
         if(response.ok) {
             const data = await response.json();
             locationDisplay.textContent = data.location.name + ", " + data.location.country
