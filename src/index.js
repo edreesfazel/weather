@@ -10,7 +10,7 @@ const API_KEY = '1fc1165584224c2184e181414233010';
 
 async function getWeather() {
     const location = locationInput.value
-    const endpoint = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}&aqi=no`;
+    const endpoint = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}&q=${location}&aqi=no`
 
     
     try {
