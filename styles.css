@@ -1,0 +1,90 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.condition {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#conditionsImage {
+    display: none;  
+    width: 50px;
+    height: 50px;
+}
+
+
+#locationInput {
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 50%;
+    max-width: 400px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+#getWeatherButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    outline: none;
+}
+
+#getWeatherButton:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+#locationDisplay {
+    font-size: 36px;
+}
+
+#temperatureDisplay {
+    font-size: 34px;
+    color: #FF4500;
+}
+
+#feelsLikeDisplay {
+    font-size: 32px;
+}
+
+#conditionsDisplay {
+    font-size: 30px;
+}
+
+#locationInput:focus {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
